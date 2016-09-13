@@ -112,7 +112,15 @@ Got feedback? Suggested changes? Visit the repo at http://github.com/aegir-proje
 
 ## Tips
 
+### Rebuild containers
+
 When working on the Dockerfile, docker-compose file, and then aegir itself it can get confusing and repetitive to rebuild your containers. You can use the `rebuild.sh` script
+
+### Become root
+
+```
+docker exec --user 0 --interactive --tty aegirdevelopment_hostmaster_1 bash
+```
 
 ## Troubleshooting
 
